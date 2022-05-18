@@ -5,6 +5,7 @@ import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import Navbar from './Pages/Shared/Navbar';
 import ToDoList from './Pages/ToDoApp/ToDoList';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 }></Route>
                 <Route path='/login' element={<Login />}></Route>
             </Routes>
+            <ToastContainer />
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Task = ({ task }) => {
+const Task = ({ task, tasks, setTasks }) => {
     const { name, description } = task;
 
     return (
