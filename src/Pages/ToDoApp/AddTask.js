@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddTask = () => {
     const { register, handleSubmit } = useForm();
