@@ -9,7 +9,7 @@ const ToDoList = () => {
         fetch('http://localhost:5000/task')
             .then(res => res.json())
             .then(data => setTasks(data));
-    }, [])
+    }, [tasks])
 
 
     return (

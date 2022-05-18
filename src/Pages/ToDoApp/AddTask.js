@@ -22,10 +22,6 @@ const AddTask = () => {
             })
     }
 
-    function refreshPage() {
-        window.location.reload(false)
-    }
-
     return (
         <div>
             <div className='flex justify-center items-center mt-10'>
@@ -47,7 +43,6 @@ const AddTask = () => {
                             className='textarea input-bordered w-full max-w-md mb-5'
                             placeholder='Task Description' {...register("description")} />
                         <input
-                            onClick={refreshPage}
                             type='submit'
                             value='ADD TASK'
                             className='btn'

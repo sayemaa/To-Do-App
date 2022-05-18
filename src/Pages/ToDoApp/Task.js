@@ -3,6 +3,22 @@ import React from 'react';
 const Task = ({ task, tasks, setTasks }) => {
     const { name, description } = task;
 
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure?')
+        if (proceed) {
+            const url = `http://localhost:5000/task/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = tasks.filter(task => task._id !== id);
+                    setTasks(remaining);
+                })
+        }
+    }
+
     return (
         <div class="card lg:mx-w-lg bg-base-100 shadow-xl py-8 px-5">
             <div class=" flex justify-between">
@@ -12,7 +28,7 @@ const Task = ({ task, tasks, setTasks }) => {
                 </div>
                 <div class="lg:flex items-center justify-end text-right">
                     <button className='btn btn-outline btn-success m-1'>Complete</button>
-                    <button className='btn btn-outline btn-error m-1'>Delete</button>
+                    <button onClick={() => handleDelete(task._id)} className='btn btn-outline btn-error m-1'>Delete</button>
                 </div>
             </div>
         </div>
