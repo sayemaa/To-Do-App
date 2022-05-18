@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home/Home';
-import ToDoList from './Pages/Home/ToDoList';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import Navbar from './Pages/Shared/Navbar';
+import ToDoList from './Pages/ToDoApp/ToDoList';
 
 function App() {
     return (

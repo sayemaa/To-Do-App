@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa."
+        "name": "Cleaning",
+        "description": "Cleaning from 11am-12pm"
     },
     {
         "id": 2,
-        "name": "WHEEL ALIGNMENT",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa."
+        "name": "Gardening",
+        "description": "Gardening from 5pm-6pm"
     },
     {
         "id": 3,
-        "name": "OIL CHANGING",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa."
+        "name": "Studying",
+        "description": "Studying from 7pm-10pm"
     }
 ]
