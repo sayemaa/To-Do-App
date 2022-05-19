@@ -25,7 +25,6 @@ const ToDoList = () => {
                     <AddTask />
                 </div>
             </div>
-
         </div >
     );
 };
