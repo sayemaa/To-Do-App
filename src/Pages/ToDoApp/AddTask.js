@@ -8,7 +8,7 @@ const AddTask = () => {
 
     const onSubmit = data => {
         // console.log(data);
-        const url = `http://localhost:5000/task`;
+        const url = `https://quiet-castle-58457.herokuapp.com/task`;
         fetch(url, {
             method: 'POST',
             headers: {

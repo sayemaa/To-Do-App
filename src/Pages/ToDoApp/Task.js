@@ -14,7 +14,7 @@ const Task = ({ task, tasks, setTasks }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?')
         if (proceed) {
-            const url = `http://localhost:5000/task/${id}`;
+            const url = `https://quiet-castle-58457.herokuapp.com/task/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
