@@ -26,7 +26,7 @@ const Login = () => {
 
     return (
         <div>
-            <div className='flex justify-center items-center mt-20'>
+            <div className='flex justify-center items-center mt-10'>
                 <div className="card w-96 bg-base-100">
                     <h2 className="text-center text-2xl font-bold ">Login</h2>
                     <div className="card-body">
