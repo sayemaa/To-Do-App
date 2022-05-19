@@ -9,6 +9,7 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
+    let errorMessage;
     let from = location.state?.from?.pathname || "/";
 
     if (user) {
@@ -19,6 +20,10 @@ const Login = () => {
         return <Loading />
     }
 
+    if (error) {
+        errorMessage = <p className='text-red-500 text-center'>Error:{error?.message}</p>
+    }
+
     return (
         <div>
             <div className='flex justify-center items-center mt-20'>
@@ -27,6 +32,7 @@ const Login = () => {
                     <div className="card-body">
                         <button onClick={() => signInWithGoogle()} className="btn btn-outline">Continue with Google</button>
                     </div>
+                    {errorMessage}
                 </div>
             </div>
         </div>

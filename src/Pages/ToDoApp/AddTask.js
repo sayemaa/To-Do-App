@@ -7,7 +7,7 @@ const AddTask = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
-        console.log(data);
+        // console.log(data);
         const url = `http://localhost:5000/task`;
         fetch(url, {
             method: 'POST',
@@ -25,13 +25,13 @@ const AddTask = () => {
     return (
         <div>
             <div className='flex justify-center items-center mt-10'>
-                <label for="add-task-modal" class="btn btn-outline btn-primary">Add Task</label>
+                <label htmlFor="add-task-modal" className="btn btn-outline btn-primary">Add Task</label>
             </div>
-            <input type="checkbox" id="add-task-modal" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <label for="add-task-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h3 class="font-bold text-xl mb-5 text-center">Add Task</h3>
+            <input type="checkbox" id="add-task-modal" className="modal-toggle" />
+            <div className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <label htmlFor="add-task-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 className="font-bold text-xl mb-5 text-center">Add Task</h3>
                     <form onSubmit={handleSubmit(onSubmit)} className='text-center'>
                         <input
                             type='text'

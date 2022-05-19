@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <div className='flex justify-center mt-20'>
-            <button onClick={handleToDoApp} class="btn btn-primary">Proceed to To-Do App</button>
+            <button onClick={handleToDoApp} className="btn btn-primary">Proceed to To-Do App</button>
         </div>
     );
 };

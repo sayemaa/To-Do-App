@@ -20,7 +20,7 @@ const Task = ({ task, tasks, setTasks }) => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
+                    // console.log(data);
                     const remaining = tasks.filter(task => task._id !== id);
                     setTasks(remaining);
                 })
@@ -28,13 +28,13 @@ const Task = ({ task, tasks, setTasks }) => {
     }
 
     return (
-        <div class="card lg:mx-w-lg bg-base-100 shadow-xl py-8 px-5">
-            <div class=" flex justify-between">
+        <div className="card lg:mx-w-lg bg-base-100 shadow-xl py-8 px-5">
+            <div className="flex justify-between">
                 <div style={{ textDecoration: strike }} className='px-3'>
-                    <h2 class="card-title mb-3">{name}</h2>
+                    <h2 className="card-title mb-3">{name}</h2>
                     <p>{description}</p>
                 </div>
-                <div class="lg:flex items-center justify-end text-right">
+                <div className="w-48 lg:flex items-center justify-end text-right">
                     <button onClick={handleComplete} className='btn btn-outline btn-success m-1'>Complete</button>
                     <button onClick={() => handleDelete(task._id)} className='btn btn-outline btn-error m-1'>Delete</button>
                 </div>
